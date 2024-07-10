@@ -10,6 +10,8 @@ OBJECTS := $(BUILDDIR)/jobCommander.o $(BUILDDIR)/jobExecutorServer.o
 
 EXECUTABLES := $(BINDIR)/jobCommander $(BINDIR)/jobExecutorServer
 
+$(shell mkdir -p $(BUILDDIR) $(BINDIR))
+
 all: $(EXECUTABLES)
 
 $(BINDIR)/jobCommander: $(BUILDDIR)/jobCommander.o | $(BINDIR)
