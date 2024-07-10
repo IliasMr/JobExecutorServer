@@ -1,4 +1,4 @@
-Task handler application written in C 
+Task handler application written in C/C++ 
 
 
 Compilation:
