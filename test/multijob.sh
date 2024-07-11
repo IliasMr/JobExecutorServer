@@ -18,7 +18,7 @@ for file in "$@"; do                                                    #iterate
         if [[ -z "$argument" ]]; then                                              #skip for an empty line 
             continue
         fi
-        ../bin/./jobCommander linux11.di.uoa.gr 7857 issueJob "$argument"           #assuming that server runs on linux11.di.uoa.gr
+        ../bin/./jobCommander localhost 7857 issueJob "$argument"           #assuming localhost for server
 
         
     done < "$file"
