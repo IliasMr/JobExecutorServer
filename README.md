@@ -4,22 +4,21 @@ Server runs in any machine, we can connect to the server by different machines.
 
 
 
-Compilation:
+**Compilation**:
     - $make
 
-Server:   
-    - jobExecutorServer [portNum] [bufferSize] [threadPoolSize]
-        e.g. $./jobExecutorServer 7856 10 10
+**Server**: jobExecutorServer [portNum] [bufferSize] [threadPoolSize]
+    
+    - e.g. $./jobExecutorServer 7856 10 10
    
 
-jobCommander commands: 
-    - jobCommander [serverName] [portNum] [jobCommanderInputCommand]
+**jobCommander** : jobCommander [serverName] [portNum] [jobCommanderInputCommand]
 
     - issuejob:  insert a new job on the system 
         e.g. $./jobCommander localhost 7856 issueJob ls -l
     
     - setConcurrency N: sets the max number of jobs that can be run in parallel
-        e.g. $./jobCommander localhost 7856 setConcurrency ls -l
+        e.g. $./jobCommander localhost 7856 setConcurrency 4
     
     - stop <jobID>: removes job from the buffer 
         e.g. $./jobCommander localhost 7586 stop job_1
