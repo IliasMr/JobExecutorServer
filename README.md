@@ -1,6 +1,6 @@
-Task handler application written in C/C++ that controls parallel execution of tasks using a thread pool.  
-Server must be up - each jobCommander client connects to the server via sockets using TCP connection.  
-Server runs in any machine, we can connect to the server by different machines.  
+Web socket application written in C/C++ that controls parallel execution of tasks using a thread pool.  
+Each jobCommander client connects to the server via sockets using TCP connection.  
+We can interact with the server by sending commands - jobs for controlled execution.
 
 
 
